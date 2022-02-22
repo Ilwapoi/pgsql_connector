@@ -18,7 +18,7 @@ script = 'select * from table'
 exec_result = my_conn.load_data_to_pandas(script)
 
 if exec_result['result'] == 1:
-  df = exec_result['result']
+    df = exec_result['result']
 else:
-  print(exec_result['error'])
+    print(exec_result['error'])
 ```
